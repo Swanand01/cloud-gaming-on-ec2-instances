@@ -19,7 +19,7 @@ export class G6EStack extends BaseEc2Stack {
 
   protected getMachineImage() {
     return ec2.MachineImage.latestWindows(ec2.WindowsVersion.WINDOWS_SERVER_2025_ENGLISH_FULL_BASE);
-}
+  }
 
   protected getGpuType(): string {
     return 'NVIDIA';
